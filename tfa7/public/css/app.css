@@ -1,0 +1,173 @@
+/* TFA5 — plain hand-written CSS. No frameworks, no build tools. */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.site-header { background: #1e293b; }
+
+.nav {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.75rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #e2e8f0;
+    text-decoration: none;
+    padding: 0.25rem 0.4rem;
+    font-size: 0.95rem;
+}
+
+.nav a:hover { color: #ffffff; text-decoration: underline; }
+
+.nav-brand { font-weight: 700; font-size: 1rem; }
+
+.back-main { margin-left: auto; color: #93c5fd; }
+
+.container {
+    max-width: 960px;
+    margin: 1.5rem auto 2rem;
+    padding: 0 1rem;
+    min-height: 55vh;
+}
+
+h1 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+
+h2 { font-size: 1.15rem; margin: 1.5rem 0 0.5rem; }
+
+.lead { color: #475569; margin-top: 0; }
+
+.feature-list { padding-left: 1.2rem; }
+
+.feature-list li { margin: 0.35rem 0; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+}
+
+th, td {
+    text-align: left;
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+th { background: #f1f5f9; font-weight: 600; }
+
+tr:last-child td { border-bottom: none; }
+
+code {
+    background: #f1f5f9;
+    padding: 0.1rem 0.35rem;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+
+.site-footer {
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Single mobile breakpoint */
+@media (max-width: 640px) {
+    .nav { flex-direction: column; align-items: flex-start; gap: 0.5rem; }
+    .back-main { margin-left: 0; }
+    .container { word-break: break-word; }
+}
+
+/* --- TFA7 additions: forms, buttons, avatars, messages --- */
+
+.form {
+    max-width: 480px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 1.25rem;
+}
+
+.form-group { margin-bottom: 1rem; }
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 0.45rem 0.6rem;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font: inherit;
+}
+
+.form-group input:focus { outline: 2px solid #93c5fd; border-color: #3b82f6; }
+
+.error {
+    margin: 0.25rem 0 0;
+    color: #b91c1c;
+    font-size: 0.85rem;
+}
+
+.hint {
+    margin: 0.35rem 0 0;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.btn {
+    display: inline-block;
+    background: #1e293b;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.45rem 1rem;
+    font: inherit;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.btn:hover { background: #334155; }
+
+.btn-secondary {
+    background: #ffffff;
+    color: #1e293b;
+    border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover { background: #f1f5f9; }
+
+.form-actions { display: flex; gap: 0.75rem; margin-top: 1.25rem; }
+
+.avatar {
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #e2e8f0;
+}
+
+.avatar-small { display: inline-block; vertical-align: middle; }
+
+.status {
+    background: #dcfce7;
+    border: 1px solid #86efac;
+    color: #166534;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+}

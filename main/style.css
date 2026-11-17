@@ -1,0 +1,134 @@
+/* schoolproj landing page — plain CSS, system fonts, no images, no frameworks */
+
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background: #f8fafc;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.site-header {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+}
+
+.site-header p {
+    margin: 0;
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 1rem 2rem;
+}
+
+h2 {
+    margin: 2rem 0 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 2px solid #e2e8f0;
+    font-size: 1.25rem;
+}
+
+.cards {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+}
+
+.card-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.card-head h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.card p {
+    margin: 0.5rem 0 0.75rem;
+    color: #475569;
+    font-size: 0.95rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.1rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.badge.laravel { background: #fee2e2; color: #b91c1c; }
+.badge.ci { background: #dbeafe; color: #1d4ed8; }
+
+.card-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.3rem 0.9rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.card-links a:first-child {
+    background: #1e293b;
+    color: #ffffff;
+}
+
+.card-links a:first-child:hover { background: #334155; }
+
+.card-links a:last-child {
+    border: 1px solid #cbd5e1;
+    color: #1e293b;
+}
+
+.card-links a:last-child:hover { background: #f1f5f9; }
+
+.site-footer {
+    border-top: 1px solid #e2e8f0;
+    padding: 1rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+/* Single mobile breakpoint */
+@media (max-width: 640px) {
+    .card-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 0 0 0.5rem;
+    }
+}
