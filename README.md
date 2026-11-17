@@ -6,6 +6,10 @@ This repository contains a multi-framework web system portfolio (Laravel & CodeI
 You can view the live, fully working version of all projects here: 
 https://christian-ubuntu.tail8fce48.ts.net/
 
+## Authorship & Acknowledgements
+* **AI Assistance:** The core application code, folder scaffolding, and documentation drafts were heavily generated using AI tools.
+* **Human Validation & Hosting:** The creator manually configured the Linux server, set up the MySQL databases, implemented the Caddy reverse proxy, configured Tailscale Funnel, and rigorously validated and debugged all code to ensure it meets the assessment requirements.
+
 ## Projects Included
 
 ### Summatives
@@ -61,6 +65,5 @@ If you want to experience the exact multi-project routing setup used in producti
 1. Ensure Caddy is installed on your system.
 2. Make sure you have configured all four projects to run on ports 8001, 8002, 8003, and 8004.
 3. Open the Caddyfile in the root of this repository. You may need to change the root path for the static landing page to match your local file structure.
-4. Run Caddy from the root of this repository:
-   caddy run
+4. Run Caddy from the root of this repository: caddy run
 5. Open http://localhost:8000 in your browser. You will see the landing page, and all links will route to the correct local projects automatically.
