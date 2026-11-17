@@ -53,3 +53,14 @@ If you want to run any of these projects locally without Caddy or Tailscale:
 6. Run the migrations and seeders: php artisan migrate --seed
 7. Start the development server: php artisan serve
 8. Open http://127.0.0.1:8000 in your browser. Note: If running locally, change APP_URL in your .env to http://127.0.0.1:8000 and remove the path prefixes.
+
+## Running the Full Stack with Caddy Locally
+
+If you want to experience the exact multi-project routing setup used in production, you can run the Caddy reverse proxy locally.
+
+1. Ensure Caddy is installed on your system.
+2. Make sure you have configured all four projects to run on ports 8001, 8002, 8003, and 8004.
+3. Open the Caddyfile in the root of this repository. You may need to change the root path for the static landing page to match your local file structure.
+4. Run Caddy from the root of this repository:
+   caddy run
+5. Open http://localhost:8000 in your browser. You will see the landing page, and all links will route to the correct local projects automatically.
