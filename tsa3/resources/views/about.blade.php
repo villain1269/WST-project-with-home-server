@@ -10,7 +10,7 @@
         built with Laravel.
     </p>
     <p>
-        Developed by <strong>Your Full Name</strong>. The system manages a
+        Developed by <strong>Christian Ola</strong>. The system manages a
         personal daily task list: the Welcome page shows only the tasks
         scheduled for today, the Task List page shows every task ordered by
         date, and the Profile page displays the single user record. The

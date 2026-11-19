@@ -7,10 +7,7 @@ use Illuminate\Database\Seeder;
 
 class UserSeeder extends Seeder
 {
-    /**
-     * Exactly one user record, per the assessment requirements.
-     * Replace the details with your own before submitting.
-     */
+
     public function run(): void
     {
         User::create([
